@@ -1,0 +1,16 @@
+{
+  "name": "Void Client",
+  "short_name": "VoidClient",
+  "description": "Void Client custom Eaglercraft 1.8.8 web launcher",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0f1c",
+  "theme_color": "#06b6d4",
+  "icons": [
+    {
+      "src": "assets/images/logo-placeholder.svg",
+      "sizes": "256x256",
+      "type": "image/svg+xml"
+    }
+  ]
+}
