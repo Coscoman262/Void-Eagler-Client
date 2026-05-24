@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Launch Void Client in browser with saved server tools.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <title>Void Client | Launcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-nav="launcher" data-page-title="Launcher">
+  <header></header>
+
+  <main class="container" style="padding-top:24px;">
+    <section class="split">
+      <article class="card glow">
+        <h2>Launch Settings</h2>
+        <div class="form-row">
+          <label for="username">Offline Username</label>
+          <input id="username" placeholder="VoidPlayer">
+        </div>
+        <div class="form-row">
+          <label for="server-name">Server Name</label>
+          <input id="server-name" placeholder="Void SMP">
+        </div>
+        <div class="form-row">
+          <label for="server-address">Server Address</label>
+          <input id="server-address" placeholder="play.example.com:25565">
+        </div>
+        <div class="grid-2">
+          <div class="form-row">
+            <label for="profile">Profile Preset</label>
+            <select id="profile">
+              <option value="balanced">Balanced</option>
+              <option value="performance">Performance</option>
+              <option value="visual">Visual</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="fps-limit">FPS Limit</label>
+            <select id="fps-limit">
+              <option value="60">60</option>
+              <option value="120">120</option>
+              <option value="240">240</option>
+              <option value="unlimited">Unlimited</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row inline">
+          <input id="auto-connect" type="checkbox" style="width:auto;">
+          <label for="auto-connect" style="margin:0;">Auto-connect on launch</label>
+        </div>
+        <div class="actions">
+          <button id="launch-btn" class="button primary">Launch Void Client</button>
+          <button id="quick-featured" class="button secondary">Use Featured Server</button>
+          <button id="save-server" class="button secondary">Save Server</button>
+        </div>
+        <p id="launch-status">Ready.</p>
+      </article>
+
+      <article class="card">
+        <h2>Server Tools</h2>
+        <p>Manage your server list and move it between devices.</p>
+        <div class="actions" style="margin-bottom:12px;">
+          <button id="reset-servers" class="button secondary">Reset List</button>
+          <button id="export-servers" class="button secondary">Export JSON</button>
+          <label class="button secondary" for="import-servers">Import JSON</label>
+          <input id="import-servers" type="file" accept="application/json" style="display:none;">
+        </div>
+        <table class="table">
+          <thead>
+            <tr><th>Name</th><th>Address</th><th>Actions</th></tr>
+          </thead>
+          <tbody id="servers-body"></tbody>
+        </table>
+      </article>
+    </section>
+
+    <section class="card" style="margin-top:18px;">
+      <h2>Embedded Client</h2>
+      <p>Replace <small class="mono">assets/client/eaglercraft-1.8.8.html</small> with your authorized client entry.</p>
+      <iframe id="client-frame" class="launch-embed" title="Void Client"></iframe>
+    </section>
+  </main>
+
+  <footer></footer>
+
+  <script src="site-config.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/launcher.js"></script>
+  <script>
+    AppCommon.init();
+    LauncherApp.init();
+  </script>
+</body>
+</html>
