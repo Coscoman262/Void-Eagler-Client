@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Void Client support and contact page.">
+  <title>Void Client | Support</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-nav="support" data-page-title="Support">
+  <header></header>
+  <main class="container" style="padding-top:24px;">
+    <section class="grid-2">
+      <article class="card">
+        <h1>Support</h1>
+        <p>For launcher help, join Discord or open an issue on GitHub.</p>
+        <p>Email: <span id="support-email">support@example.com</span></p>
+        <div class="actions">
+          <a class="button primary" id="link-discord" href="#" target="_blank" rel="noreferrer">Discord</a>
+          <a class="button secondary" id="link-github" href="#" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </article>
+      <article class="card">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li>Clear local storage if server list behaves unexpectedly.</li>
+          <li>Verify your client file exists at <small class="mono">assets/client/eaglercraft-1.8.8.html</small>.</li>
+          <li>Check browser console for blocked resources or mixed-content issues.</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <footer></footer>
+  <script src="site-config.js"></script>
+  <script src="js/common.js"></script>
+  <script>AppCommon.init();</script>
+</body>
+</html>
