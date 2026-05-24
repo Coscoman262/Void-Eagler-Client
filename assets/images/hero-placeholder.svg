@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" fill="none">
+  <rect width="1200" height="700" fill="#ECFEFF"/>
+  <circle cx="170" cy="130" r="110" fill="#99F6E4"/>
+  <circle cx="1030" cy="560" r="160" fill="#FCD34D"/>
+  <rect x="220" y="180" width="760" height="340" rx="26" fill="#0F766E"/>
+  <rect x="270" y="230" width="660" height="240" rx="18" fill="#F6F7FB"/>
+  <text x="330" y="360" fill="#0F766E" font-family="Arial" font-size="54" font-weight="700">Void Client Hero</text>
+</svg>
